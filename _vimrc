@@ -2,7 +2,7 @@ source $VIMRUNTIME/defaults.vim
 
 set laststatus=2
 set encoding=utf-8
-"set gfn=Consolas:h11:cANSI:qDRAFT
+set gfn=Consolas:h11:cANSI:qDRAFT
 set guioptions-=m
 set guioptions-=T
 set guioptions-=r
@@ -55,6 +55,11 @@ let R_assign=0
 Plug 'junegunn/goyo.vim'
 Plug 'SirVer/ultisnips'
 call plug#end()
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="vertical"
 
 let g:vimtex_view_general_viewer='SumatraPDF'
 let g:airline_theme='minimalist'
